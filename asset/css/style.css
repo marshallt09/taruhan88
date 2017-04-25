@@ -319,9 +319,11 @@ aside #cr {
     footer {
         height: auto;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.16);
+        background-color: rgba(0, 0, 0, 0.7);
         float: left;
         margin-top: 1em;
+        position: relative;
+        padding-bottom: 20px;
     }
     footer #games {
         height: 140px;
@@ -404,5 +406,39 @@ aside #cr {
         font-size: 1.3em;
         padding: 3px;
     }
-
+    
+    footer #bank{
+        position: relative;
+    }
+    footer #bank #img {
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100px;
+        width: 600px;
+        background-image: url("../images/bank.png");
+        background-size: 100% 100%;
+    }
+    
+    footer h1 {
+        color: whitesmoke;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    footer p {
+        text-align: center;
+        color: whitesmoke;
+        font-size: 1.1em;
+        padding-left: 30px;
+        padding-right: 30px;
+        font font-weight: bolder;
+    }
+    footer #small {
+        margin-top: 30px;
+        text-align: center;
+        color: whitesmoke;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
