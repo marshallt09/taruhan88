@@ -1,0 +1,68 @@
+.fa {
+    top: 7px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    display: inline-block;
+    background-size: 100% 100%;
+}
+
+
+.phone {
+    background-image: url("icon/phone.ico");
+}
+
+.blackberry {
+    background-image: url("icon/blackberry.png");
+}
+
+.whatsapp {
+    background-image: url("icon/whatsapp.png");
+}
+
+.line {
+    background-image: url("icon/line.png");
+}
+
+.yahoo {
+    background-image: url("icon/yahoo.png");
+}
+
+.skype {
+    background-image: url("icon/skype.png");
+}
+
+.game {
+    width: 170px;
+    height: 135px;
+    float: left;
+    cursor: pointer;
+    transition: margin-top .2s ease-out;
+}
+.game:hover {
+    margin-top:-10px
+}
+.sportbook {
+    background-image: url("../images/sportbook.png");
+    background-size: 100% 100%;
+}
+.casino {
+    background-image: url("../images/casino.png");
+    background-size: 100% 100%;
+    left: 170px;
+}
+.tangkas {
+    background-image: url("../images/tangkas.png");
+    background-size: 100% 100%;
+    left: 340px;
+}
+.togel {
+    background-image: url("../images/togel.png");
+    background-size: 100% 100%;
+    left: 510px;
+}
+.poker {
+    background-image: url("../images/poker.png");
+    background-size: 100% 100%;
+    left: 680px;
+}
