@@ -315,29 +315,22 @@ aside #cr {
         padding: 11px;
         font-size: 1.1em;
     }
-    /* footer */
-    footer {
-        height: auto;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        float: left;
-        margin-top: 1em;
-        position: relative;
-        padding-bottom: 20px;
-    }
-    footer #games {
+    
+    /* games */
+    #games-t88 {
         height: 140px;
         position: relative;
+        background-color: aqua;
+        margin-top: 400px
     }
-    footer #games ul {
+    #games-t88 ul {
         position: relative;
-        background-color: aqu;
         height: 100%;
         width: 85%;
         margin-left: auto;
         margin-right: auto;
     }
-    footer #games ul li {
+    #games-t88 ul li {
         height: 100%;
         width: calc(100% / 5);
         position: relative;
@@ -345,6 +338,17 @@ aside #cr {
         box-sizing: border-box;
         list-style: none;
     }
+    
+    /* footer */
+    footer {
+        height: auto;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        float: left;
+        position: relative;
+        padding-bottom: 20px;
+    }
+    
     footer .info {
         position: relative;
         background: #989898;
