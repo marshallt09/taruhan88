@@ -27,51 +27,39 @@ $(document).ready(function () {
             });
         }
     });
-        $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        if (scroll >= 80) {
-            $('.logo').css({
-                'display': 'none',
-            });
-            
-        } else {
-            $('.logo').css({
-                'display': 'block',
-            });
-        }
-//    $(window).scroll(function () {
+//        $(window).scroll(function () {
 //        var scroll = $(window).scrollTop();
-//        if (scroll >= 800) {
-//            $('nav').css({
-//                'top': '0px',
-//                'position': 'fixed',
-//                'width': '1024px',
-//                'z-index': 2
-//            });
+//        if (scroll >= 80) {
 //            $('.logo').css({
-//                'z-index': 1,
+//                'display': 'none',
 //            });
-//            
-//            $('aside').css({
-//                'position': 'fixed',
-//                'top': '30px',
-//            });
-//            
-//            $('header').css('height', '80px');
 //            
 //        } else {
-//            $('nav').css({
-//                'z-index': '0',
-//                'position': 'relative',
-//                'z-index': 2
-//
-//            });
-//            $('.logo').css('z-index', '3');
-//            $('aside').css({
-//                'position': 'relative',
-//                'top': '0px',
+//            $('.logo').css({
+//                'display': 'block',
 //            });
 //        }
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 100) {
+            $('nav').css({
+                'top': '0px',
+                'position': 'fixed',
+                'width': '1024px',
+                'z-index': 2
+            });
+            $('.logo').css({
+                'z-index': 1,
+            });
+        } else {
+            $('nav').css({
+                'z-index': '0',
+                'position': 'relative',
+                'z-index': 2
+
+            });
+            $('.logo').css('z-index', '3');
+        }
     });
 
 });
