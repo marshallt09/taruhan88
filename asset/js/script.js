@@ -63,8 +63,8 @@ $(document).ready(function () {
     });
 
     $('#nav-home').on('click', function () {
-        $('section').load('../partial/register.html');
-        $.getScript('/asset/js/register.js')
+        $('section').load('/../partial/register.html');
+//        $.getScript('/asset/js/register.js');
     });
 
 });
