@@ -63,7 +63,7 @@ $(document).ready(function () {
     });
 
     $('#nav-daftar').on('click', function () {
-        $('section').load('../partial/register.html');
+        $('section').load('/taruhan88/partial/register.html');
 //        $.getScript('/asset/js/register.js');
     });
 
