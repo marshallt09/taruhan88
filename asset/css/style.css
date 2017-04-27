@@ -267,10 +267,11 @@ aside #cr {
     section {
         width: calc(100% - 420px - 1em);
         float: left;
-        height: 350px;
+        min-height: 350px;
         margin-top: 2em;
         background-color: rgba(0, 0, 0, 0.24);
-        margin-right: 1em
+        margin-right: 1em;
+        position: relative;
     }
     section .register {
         position: relative;
@@ -309,7 +310,7 @@ aside #cr {
         text-align: center
     }
     section .register #chapta-img {
-        margin-right: 78px;
+        margin-right: 50px;
         width: 90px;
         height: 100%;
         text-align: center;
@@ -373,6 +374,7 @@ aside #cr {
         width: 420px;
         float: left;
         margin-top: 2em;
+        position: relative;
     }
     aside #sp24h {
         height: 55px;
@@ -416,14 +418,17 @@ aside #cr {
     #games-t88 {
         height: 140px;
         position: relative;
-        margin-top: 400px;
+/*        margin-top: 400px;*/
+        width: 100%;
+        float: left;
     }
     #games-t88 ul {
         position: relative;
         height: 100%;
-        width: 85%;
-        margin-left: auto;
+        width: 90%;
+        margin-left: 5%;
         margin-right: auto;
+        display: inline-block;
     }
     #games-t88 ul li {
         height: 100%;
@@ -437,10 +442,11 @@ aside #cr {
     footer {
         height: auto;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
+/*        background-color: rgba(0, 0, 0, 0.7);*/
         float: left;
         position: relative;
         padding-bottom: 20px;
+        display: inline-block;
     }
     footer .info {
         position: relative;

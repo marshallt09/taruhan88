@@ -63,8 +63,19 @@ $(document).ready(function () {
     });
 
     $('#nav-daftar').on('click', function () {
+        //local link
+        $('section').load('/../partial/register.html');
+        //github link
         $('section').load('/taruhan88/partial/register.html');
-//        $.getScript('/asset/js/register.js');
+        //$.getScript('/asset/js/register.js');
+    });
+    
+    $('#nav-deposit').on('click', function () {
+        //local link
+        $('section').load('/../partial/deposit.html');
+        //github link
+        $('section').load('/taruhan88/partial/deposit.html');
+        //$.getScript('/asset/js/register.js');
     });
 
 });
