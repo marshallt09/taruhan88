@@ -27,18 +27,7 @@ $(document).ready(function () {
             });
         }
     });
-    //        $(window).scroll(function () {
-    //        var scroll = $(window).scrollTop();
-    //        if (scroll >= 80) {
-    //            $('.logo').css({
-    //                'display': 'none',
-    //            });
-    //            
-    //        } else {
-    //            $('.logo').css({
-    //                'display': 'block',
-    //            });
-    //        }
+
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll > 100) {
@@ -69,7 +58,7 @@ $(document).ready(function () {
         $('section').load('/taruhan88/partial/register.html');
         //$.getScript('/asset/js/register.js');
     });
-    
+
     $('#nav-deposit').on('click', function () {
         //local link
         $('section').load('/../partial/deposit.html');
