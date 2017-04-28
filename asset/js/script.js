@@ -83,6 +83,14 @@ $(document).ready(function () {
         //$.getScript('/asset/js/register.js');
     });
     
+    $('#nav-aturan').on('click', function () {
+        //local link
+        $('section').load('/../partial/peraturan.html');
+        //github link
+        $('section').load('/taruhan88/partial/peraturan.html');
+        //$.getScript('/asset/js/register.js');
+    });
+    
     $('#nav-games').on('click', function () {
         $('.games-t88').css('display', 'block');
     });
