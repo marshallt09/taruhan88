@@ -94,6 +94,28 @@ $(document).ready(function () {
         $('section').load('/taruhan88/partial/peraturan.html');
         //$.getScript('/asset/js/register.js');
     });
+    
+    $('#nav-livescore').on('click', function () {
+        //local link
+        $('section').load('/../partial/livescore.php');
+        //github link
+        $('section').load('/taruhan88/partial/livescore.php');
+        //$.getScript('/asset/js/register.js');
+
+        $('aside').css({
+            'width' : '280px',
+            'position' : 'absolute',
+            'right' : '0px', 
+            'transition' : 'width .1s ease-in-out'
+        });
+        $('section').css({
+            'width' : 'calc(100% - 280px - 1em)',
+            'transition' : 'width .1s ease-in-out',
+        });
+        $('#cr').css({
+            'background' : 'none',
+        });
+    });
 
     $('#nav-games').on('click', function () {
         $('.games-t88').css('display', 'block');

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Taruhan88.com</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body ondragstart="return false" draggable="false" ondragenter="event.dataTransfer.dropEffect='none'; event.stopPropagation(); event.preventDefault();" ondragover="event.dataTransfer.dropEffect='none';event.stopPropagation(); event.preventDefault();" ondrop="event.dataTransfer.dropEffect='none';event.stopPropagation(); event.preventDefault();">
+        
+        <!-- session -->
+        <script>
+        $( "#feeds" ).load( "feeds.php", { limit: 25 }, function() {
+        alert( "The last 25 entries in the feed have been loaded" ); });
+        </script>
+        <div class="games-t88" style="display: none;">
+            <div id="games-t88">
+                <div class="close-game"></div>
+                <ul style="margin-top: calc(12%)">
+                    <li><a href="/"><i class="game sportbook"></i></a></li>
+                    <li><a href="/"><i class="game casino"></i></a></li>
+                    <li><a href="/"><i class="game tangkas"></i></a></li>
+                    <li><a href="/"><i class="game togel"></i></a></li>
+                    <li><a href="/"><i class="game poker"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="backimage"></div>
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <img src="asset/images/taruhan88.png" alt="">
+                </div>
+                <input type="checkbox" id="navigation" name="a[]">
+                <label for="navigation" id="nav-button"></label>
+            </header>
+            <nav>
+                <ul>
+                    <li id="nav-home">home</li>
+                    <li id="nav-promo">promo</li>
+                    <li id="nav-deposit">deposit</li>
+                    <li id="nav-withdraw" class="center left">withdraw</li>
+                    <li id="nav-daftar" class="center right">daftar</li>
+                    <li id="nav-games">games</li>
+                    <li id="nav-livescore">livescore</li>
+                    <li id="nav-aturan">aturan</li>
+                </ul>
+            </nav>
+            <section>
+            </section>
+            <aside>
+                <div id="cr"></div>
+                <div id="sp24h"></div>
+                <ul id="support-right">
+                    <li>
+                        <i class="fa phone"></i>
+                        <p>+855 887833087</p>
+                    </li>
+                    <li>
+                        <i class="fa blackberry"></i>
+                        <p>296B8295</p>
+                    </li>
+                    <li>
+                        <i class="fa whatsapp"></i>
+                        <p>+855 887833087</p>
+                    </li>
+                    <li>
+                        <i class="fa line"></i>
+                        <p>TARUHAN 88</p>
+                    </li>
+                    <li>
+                        <i class="fa yahoo"></i>
+                        <p>TARUHAN 88</p>
+                    </li>
+                    <li>
+                        <i class="fa skype"></i>
+                        <p>LIVE : TARUHAN 88</p>
+                    </li>
+                </ul>
+            </aside>
+            <div id="games-t88">
+                <ul>
+                    <li><a href="/"><i class="game sportbook"></i></a></li>
+                    <li><a href="/"><i class="game casino"></i></a></li>
+                    <li><a href="/"><i class="game tangkas"></i></a></li>
+                    <li><a href="/"><i class="game togel"></i></a></li>
+                    <li><a href="/"><i class="game poker"></i></a></li>
+                </ul>
+            </div>
+            <footer>
+                <div class="info">
+                    <div id="img">
+                        <span id="top">INFO</span>
+                        <span id="bottom">TERKINI</span>
+                        <div class="pal"></div>
+                    </div>
+                    <marquee>
+                    Terima kasih sudah mengunjungi Taruhan88.net. Kepuasan dan juga kepercayaan pelanggan merupakan prioritas utama kami.
+                    </marquee>
+                </div>
+                <div id="bank">
+                    <div id="img"></div>
+                </div>
+                <h1 style="margin-top:10px">Kami adalah Bandar Bola dan Agen judi Paling Terpercaya di Indonesia</h1>
+                <h1 style="color: yellow; margin-bottom: 10px;">Selamat Datang di Website kami</h1>
+                <p>
+                    Taruhan88.net adalah agen Judi Bola yang telah memiliki banyak pengalaman sebagai penyelenggara aneka permainan judi online semacam Taruhan Bola Online, Togel, hingga Casino secara online. Kami berupaya terus untuk selali dapat memberikan Layanan Terbaik untuk setiap member kami, ini semua hanyalah demi kenyamanan semua member taruhan88.net
+                </p>
+                <p>
+                    Kami merupakan Agen yang memiliki banyak pengalaman dalam games judi datau Taruhan Bola Online selama bertahun-tahun, kami akan berupaya untuk terus dapat memberikan layanan terbaik kepada anda sehingga anda akan merasa lebih Aman dan Nyaman untuk bermain bersama kami. Kami fokus mengutamakan kepuasan dan kepercayaan semua member, oleh karena itu jangan pernah ragu untuk bergabung bersama kami di taruhan88.net.
+                </p>
+                <p>
+                    Bandar Bola dan Agen Judi Bola Terpercaya dengan pelayanan terbaik
+                </p>
+                <p>
+                    Perusahaan kami telah memiliki banyak pengalaman dan memberikan layanan terbaik bagi setiap pemain Judi Onlin yang kami selenggarakan. Kami terkenal sebagai bandar bola dan Agen Judi Bola yang memiliki banyak sekali pengalaman sebagai agen judi bola terpercaya, kami pastikan anda puas dengan pelayanan kami. Kami memberikan layanan berbagai permainan menarik di website ini, mulai dari Taruhan Bola Online hingga permainan Casino Online yang pasti anda sukai.
+                </p>
+                <p>
+                    Bandar Bola dan Agen Judi Bola yang memberikan layanan prima untuk permainan Taruhan Bola Online Kami selalu siap memberikan jawaban akan semua pertanyaan anda mengenai semua permainan taruhan bola online dan permainan lain yang ada di website ini, silahkan hunungi Customer Service kami apabila saat ini anda menyimpan pertanyaan mengenai permainan yang ada di website kami. Selamat Bermain !
+                </p>
+                <div id="small">
+                    Copyright &copy; <script> document.write(new Date().getFullYear());</script>,
+                    Taruhan88.net. All Right Reserved <br>
+                    Judi Bola | Bandar Bola | Taruhan Bola Online
+                </div>
+            </footer>
+        </div>
+        <!-- font library -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+        <!-- end font library -->
+        <!-- custom style -->
+        <link rel="stylesheet" href="asset/css/font-icon.css">
+        <link rel="stylesheet" href="asset/css/style.css">
+        <!-- end custom style -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="asset/js/script.js" type="text/javascript"></script>
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+        var __lc = {};
+        __lc.license = 3741461;
+        (function() {
+        var lc = document.createElement('script');
+        lc.type = 'text/javascript';
+        lc.async = true;
+        lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(lc, s);
+        })();
+        </script>
+        <!--End of Tawk.to Script-->
+    </body>
+</html>
