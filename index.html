@@ -8,10 +8,10 @@
 </head>
 
 <body ondragstart="return false" draggable="false" ondragenter="event.dataTransfer.dropEffect='none'; event.stopPropagation(); event.preventDefault();" ondragover="event.dataTransfer.dropEffect='none';event.stopPropagation(); event.preventDefault();" ondrop="event.dataTransfer.dropEffect='none';event.stopPropagation(); event.preventDefault();">
-    <div class="games-t88">
+    <div class="games-t88" style="display: none;">
         <div id="games-t88">
             <div class="close-game"></div>
-            <ul style="margin-top: calc(20%)">
+            <ul style="margin-top: calc(12%)">
                 <li><a href="/"><i class="game sportbook"></i></a></li>
                 <li><a href="/"><i class="game casino"></i></a></li>
                 <li><a href="/"><i class="game tangkas"></i></a></li>
@@ -34,13 +34,13 @@
         <nav>
             <ul>
                 <li id="nav-home">home</li>
-                <li>promo</li>
+                <li id="nav-promo">promo</li>
                 <li id="nav-deposit">deposit</li>
-                <li class="center left">withdraw</li>
+                <li id="nav-withdraw" class="center left">withdraw</li>
                 <li id="nav-daftar" class="center right">daftar</li>
                 <li id="nav-games">games</li>
-                <li>livescore</li>
-                <li>aturan</li>
+                <li id="nav-livescore">livescore</li>
+                <li id="nav-aturan">aturan</li>
             </ul>
         </nav>
 
