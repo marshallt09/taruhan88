@@ -27,7 +27,11 @@ $(document).ready(function () {
             });
         }
     });
-
+    $(document).keyup(function (e) {
+        if (e.keyCode == 27) { // escape key maps to keycode `27`
+            $('.games-t88').css('display', 'none');
+        }
+    });
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll > 100) {
@@ -66,7 +70,7 @@ $(document).ready(function () {
         $('section').load('/taruhan88/partial/deposit.html');
         //$.getScript('/asset/js/register.js');
     });
-    
+
     $('#nav-withdraw').on('click', function () {
         //local link
         $('section').load('/../partial/withdraw.html');
@@ -74,7 +78,7 @@ $(document).ready(function () {
         $('section').load('/taruhan88/partial/withdraw.html');
         //$.getScript('/asset/js/register.js');
     });
-    
+
     $('#nav-promo').on('click', function () {
         //local link
         $('section').load('/../partial/promo.html');
@@ -82,7 +86,7 @@ $(document).ready(function () {
         $('section').load('/taruhan88/partial/promo.html');
         //$.getScript('/asset/js/register.js');
     });
-    
+
     $('#nav-aturan').on('click', function () {
         //local link
         $('section').load('/../partial/peraturan.html');
@@ -90,7 +94,7 @@ $(document).ready(function () {
         $('section').load('/taruhan88/partial/peraturan.html');
         //$.getScript('/asset/js/register.js');
     });
-    
+
     $('#nav-games').on('click', function () {
         $('.games-t88').css('display', 'block');
     });
