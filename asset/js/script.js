@@ -3,7 +3,7 @@ $(document).ready(function () {
         $('#navigation:checkbox').change(function () {
             // this will contain a reference to the checkbox   
             if (this.checked) {
-                $('nav').css('height', '259px');
+                $('nav').css('height', '350px');
             } else {
                 $('nav').css('height', '0px');
             }
@@ -17,14 +17,19 @@ $(document).ready(function () {
                 'top': '0px',
                 'position': 'relative'
             });
+            $('#navigation').change(function () {
+                cb = $(this);
+                cb.attr("checked",true);
+            });
         }
         if ($(this).width() <= 1024) {
             $('nav').css({
                 'height': '0px',
                 'top': '60px',
                 'width': '100%',
-                'position': 'absolute'
+                'position': 'absolute',
             });
+            $('aside ul li').css('z-index', '0');
         }
     });
     $(document).keyup(function (e) {
@@ -48,79 +53,70 @@ $(document).ready(function () {
             $('nav').css({
                 'z-index': '0',
                 'position': 'relative',
-                'z-index': 2
+                //                'z-index': 2
 
             });
             $('.logo').css('z-index', '3');
         }
     });
 
-    $('#nav-daftar').on('click', function () {
-        //local link
-        $('section').load('/../partial/daftar.html');
-        //github link
-        $('section').load('/taruhan88/partial/daftar.html');
-        //$.getScript('/asset/js/register.js');
+
+    // script navigasi
+    $('nav ul li').mouseover(function () { //event mouse hover navigasi
+        var PartialPage = this.id.replace('nav-', '');
+        if (PartialPage == 'games') { //kalau nama id games
+            $('#nav-' + PartialPage).on('click', function () {
+                $('.games-t88').css('display', 'block');
+            });
+
+        } else {
+            if (PartialPage == 'livescore') { //kalau nama id livescore
+                $('#nav-' + PartialPage).on('click', function () {
+                    widhtPlay(true);
+                    RedirectPage(PartialPage);
+                });
+            } else {
+
+                $('#' + this.id).on('click', function () {
+                    widhtPlay(false);
+                    RedirectPage(PartialPage);
+                });
+            }
+        }
     });
 
-    $('#nav-deposit').on('click', function () {
-        //local link
-        $('section').load('/../partial/deposit.html');
-        //github link
-        $('section').load('/taruhan88/partial/deposit.html');
-        //$.getScript('/asset/js/register.js');
-    });
-
-    $('#nav-withdraw').on('click', function () {
-        //local link
-        $('section').load('/../partial/withdraw.html');
-        //github link
-        $('section').load('/taruhan88/partial/withdraw.html');
-        //$.getScript('/asset/js/register.js');
-    });
-
-    $('#nav-promo').on('click', function () {
-        //local link
-        $('section').load('/../partial/promo.html');
-        //github link
-        $('section').load('/taruhan88/partial/promo.html');
-        //$.getScript('/asset/js/register.js');
-    });
-
-    $('#nav-aturan').on('click', function () {
-        //local link
-        $('section').load('/../partial/peraturan.html');
-        //github link
-        $('section').load('/taruhan88/partial/peraturan.html');
-        //$.getScript('/asset/js/register.js');
-    });
-    
-    $('#nav-livescore').on('click', function () {
-        //local link
-        $('section').load('/../partial/livescore.html');
-        //github link
-        $('section').load('/taruhan88/partial/livescore.html');
-        //$.getScript('/asset/js/register.js');
-
+    function widhtPlay(isNot) {
+        if (isNot) {
+            var AsWidth = '250px',
+                AsPos = 'absolute',
+                SecWidth = 'calc(100% - 250px - 1em)',
+                SecBg = 'hidden';
+            $('#cr').hide();
+        } else {
+            var AsWidth = '420px',
+                AsPos = 'relative',
+                SecWidth = 'calc(100% - 420px - 1em)',
+                CrDisp = 'block';
+            $('#cr').show();
+        }
         $('aside').css({
-            'width' : '280px',
-            'position' : 'absolute',
-            'right' : '0px', 
-            'transition' : 'width .1s ease-in-out'
+            'width': AsWidth,
+            'position': AsPos,
+            'right': '0px',
+            'transition': 'width .1s ease-in-out'
         });
         $('section').css({
-            'width' : 'calc(100% - 280px - 1em)',
-            'transition' : 'width .1s ease-in-out',
+            'width': SecWidth,
+            'transition': 'width .1s ease-in-out',
         });
-        $('#cr').css({
-            'background' : 'none',
-        });
-    });
+    }
 
-    $('#nav-games').on('click', function () {
-        $('.games-t88').css('display', 'block');
-    });
-
+    function RedirectPage(page) {
+        $('section').load('/../partial/' + page + '.html'); //local
+        $('section').load('/taruhan88/partial/' + page + '.html'); //github
+        //$.getScript('/asset/js/register.js');
+    }
+    // tutup game menu
     $('.close-game').on('click', function () {
         $('.games-t88').css('display', 'none');
     });

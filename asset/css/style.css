@@ -141,22 +141,23 @@ aside #cr {
         width: 100%;
         position: fixed;
     }
-    .logo {
+    header .logo {
         background: none;
         position: absolute;
         margin-top: 10px;
         margin-left: calc(50% - 100px)
     }
-    .logo img {
+    header .logo img {
         height: 35px;
         width: 200px;
     }
+    
     #navigation {
         display: none
     }
     #nav-button {
         background-color: rgba(255, 255, 255, 0.12);
-        width: 45px;
+        width: 25px;
         height: 45px;
         position: absolute;
         border-radius: 5px;
@@ -174,15 +175,16 @@ aside #cr {
         height: 0px;
         overflow: hidden;
         transition: height .1s ease-out;
+        z-index: 1
     }
     nav ul {
         width: 100%;
         display: inline-block;
-        overflow: hidden
+        overflow: hidden;
     }
     nav ul li {
         width: 100%;
-        padding: 10px
+        padding: 10px;
     }
     nav ul .center {
         width: calc(100%);
@@ -215,6 +217,7 @@ aside #cr {
         position: relative;
         display: block
     }
+    /* header*/
     header {
         height: 100px;
     }
