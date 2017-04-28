@@ -97,9 +97,9 @@ $(document).ready(function () {
     
     $('#nav-livescore').on('click', function () {
         //local link
-        $('section').load('/../partial/livescore.php');
+        $('section').load('/../partial/livescore.html');
         //github link
-        $('section').load('/taruhan88/partial/livescore.php');
+        $('section').load('/taruhan88/partial/livescore.html');
         //$.getScript('/asset/js/register.js');
 
         $('aside').css({
