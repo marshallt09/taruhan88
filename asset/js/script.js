@@ -66,5 +66,12 @@ $(document).ready(function () {
         $('section').load('/taruhan88/partial/deposit.html');
         //$.getScript('/asset/js/register.js');
     });
+    $('#nav-games').on('click', function () {
+        $('.games-t88').css('display', 'block');
+    });
+    
+    $('.close-game').on('click', function(){
+        $('.games-t88').css('display', 'none');
+    });
 
 });
